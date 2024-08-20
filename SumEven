@@ -1,0 +1,19 @@
+package com.java;
+import java.util.Scanner;
+class SumEven{
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        System.out.print("Enter n number of even number:");
+        int x = sc.nextInt();
+        int i = 1;
+        int sum = 0;
+        while(i<=x){
+            int even = 2*i;
+            System.out.println("Even Number:"+even+" ");
+            //System.out.print(even + " ");
+            i++;
+            sum = sum+even;
+        }
+        System.out.print("Sum = "+ sum);
+    }
+}
